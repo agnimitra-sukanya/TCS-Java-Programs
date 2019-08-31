@@ -4,16 +4,16 @@ import java.util.Scanner;
 class Main {
     public static void main(String args[])
     {
-        int original,num,rem,result=0;
+        int temp,num,rem,result=0;
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter a number:");
         num=sc.nextInt();
-        original=num;
-        while(original>0)
+        temp=num;
+        while(temp>0)
         {
-            rem=original%10;
+            rem=temp%10;
             result=result+(rem*rem*rem);
-            original=original/10;
+            temp=temp/10;
         }
         if(result==num)
         {

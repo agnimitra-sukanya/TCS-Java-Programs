@@ -11,11 +11,11 @@ class Main {
         temp=num;
         while(temp>0)
         {
-            rem=temp%10;
+            rem=num%10;
             result=result+(rem*rem*rem);
-            temp=temp/10;
+            num=num/10;
         }
-        if(result==num)
+        if(result==temp)
         {
             System.out.print("The number is armstrong");
         }

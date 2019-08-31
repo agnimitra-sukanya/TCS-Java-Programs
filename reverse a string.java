@@ -3,16 +3,16 @@ import java.io.*;
 import java.util.Scanner;
 class Main {
     public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String rev="";
+        System.out.println("Enter a string:");
+        String original=sc.nextLine();
+        int leng=original.length();
+        for(int i=leng-1;i>=0;i--)
         {
-            Scanner sc=new Scanner(System.in);
-            System.out.println("Enter the numbers to be swapped:");
-            int a=sc.nextInt();
-            int b=sc.nextInt();
-            int t;
-            t=a;
-            a=b;
-            b=t;
-            System.out.println("Numbers after swapping:"+a+","+b);
+            rev=rev+original.charAt(i);
         }
-    
+        System.out.print("The reversed string is:"+rev);
     }
+}

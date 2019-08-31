@@ -9,7 +9,7 @@ class Main {
         System.out.println("Enter a number:");
         num=sc.nextInt();
         temp=num;
-        while(temp>0)
+        while(num>0)
         {
             rem=num%10;
             result=result+(rem*rem*rem);
